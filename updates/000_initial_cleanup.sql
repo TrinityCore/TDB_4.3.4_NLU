@@ -19,9 +19,9 @@ DELETE FROM `game_event_gameobject` WHERE `guid` NOT IN (SELECT `guid` FROM `gam
 
 DELETE FROM `spell_target_position` WHERE `target_map` IN (0, 1);
 
+UPDATE `creature_template` SET `AIName`='' WHERE `AIName`='EventAI';
+
 TRUNCATE `npc_trainer`;
-TRUNCATE `creature_ai_scripts`;
-TRUNCATE `creature_ai_texts`;
 TRUNCATE `spell_ranks`;
 TRUNCATE `hotfix_data`;
 TRUNCATE `disables`;
