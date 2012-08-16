@@ -1,4 +1,4 @@
-﻿SET @OGUID := 71732;
+SET @OGUID := 71732;
 
 DELETE FROM `gameobject` WHERE `guid` BETWEEN @OGUID+225 AND @OGUID+1613;
 INSERT INTO `gameobject` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `position_x`, `position_y`, `position_z`, `orientation`, `rotation0`, `rotation1`, `rotation2`, `rotation3`, `spawntimesecs`, `animprogress`, `state`) VALUES
