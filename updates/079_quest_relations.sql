@@ -1,4 +1,4 @@
-﻿INSERT IGNORE INTO `creature_involvedrelation` (`id`, `quest`) VALUES
+INSERT IGNORE INTO `creature_involvedrelation` (`id`, `quest`) VALUES
 (10307, 28540),
 (10307, 28656),
 (10578, 25165),
