@@ -1,4 +1,4 @@
-﻿UPDATE `quest_template` SET `RequiredRaces` = 8 WHERE `Id` = 929;
+UPDATE `quest_template` SET `RequiredRaces` = 8 WHERE `Id` = 929;
 UPDATE `quest_template` SET `RequiredRaces` = 258 WHERE `Id` = 3090;
 UPDATE `quest_template` SET `RequiredRaces` = 32 WHERE `Id` = 3091;
 UPDATE `quest_template` SET `RequiredRaces` = 32 WHERE `Id` = 3092;
