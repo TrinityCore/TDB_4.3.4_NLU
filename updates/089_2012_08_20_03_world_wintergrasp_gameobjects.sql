@@ -14,7 +14,7 @@ UPDATE `gameobject_template` SET `ScriptName`= 'go_wg_vehicle_teleporter' WHERE 
 
 -- Before pushing to master check if guids are free.
 -- Spawns Workshop Capture Points
-SET @GUID := 71385;
+SET @GUID := 487;
 DELETE FROM gameobject WHERE id IN (190475,190487,194959,194962);
 DELETE FROM gameobject WHERE guid BETWEEN @GUID AND @GUID+3;
 INSERT INTO gameobject (guid,id,position_x,position_y,position_z,orientation,map) VALUES
@@ -24,7 +24,7 @@ INSERT INTO gameobject (guid,id,position_x,position_y,position_z,orientation,map
 (@GUID+3, 194962, 4390.776367, 3304.094482, 372.429077, 6.097023, 571); -- sw
 
 -- Misc objects in fortress phased properly
-SET @OGUID := 71389;
+SET @OGUID := @GUID+4;
 DELETE FROM `gameobject` WHERE `id` IN (193096,193097,193098,193099,193100,193101,193102,193103,193104,193105,193106,193107,193108,193109,193124,193125,193126,193127,193128,193129,193130,193131,193132,193133,193134,193135,193136,193137,193138,193139,193140,193141,193142,193143,193144,193145,193146,193147,193148,193149,193150,193151,193152,193153,193154,193155,193156,193157,193158,193159,193160,193161,193162,193163,193164,193165);
 DELETE FROM `gameobject` WHERE `guid` BETWEEN @OGUID AND @OGUID+55;
 INSERT INTO `gameobject` (`guid`,`id`,`map`,`spawnMask`,`phaseMask`,`position_x`,`position_y`,`position_z`,`orientation`,`rotation0`,`rotation1`,`rotation2`,`rotation3`,`spawntimesecs`,`animprogress`,`state`) VALUES
