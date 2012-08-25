@@ -1,4 +1,4 @@
-﻿SET @CGUID := 6748;
+SET @CGUID := 6748;
 SET @OGUID := 1047;
 DELETE FROM `creature` WHERE `map` = 33;
 DELETE FROM `gameobject` WHERE `map` = 33;
