@@ -26,7 +26,6 @@ DELETE FROM `creature_template_addon` WHERE `entry`=@NPC_SALRAND;
 INSERT INTO `creature_template_addon` (`entry`,`mount`,`bytes1`,`bytes2`,`auras`) VALUES
 (@NPC_SALRAND,0,0x0,0x1,'45775');
 
-DELETE FROM `creature_ai_scripts` WHERE `creature_id`=@NPC_SALRAND;
 DELETE FROM `smart_scripts` WHERE (`source_type`=0 AND `entryorguid` IN (@NPC_SALRAND,@NPC_BERYL_INVISMAN)) OR (`source_type`=9 AND `entryorguid` IN (@NPC_SALRAND*100,@NPC_BERYL_INVISMAN*100));
 INSERT INTO `smart_scripts` (`entryorguid`,`source_type`,`id`,`link`,`event_type`,`event_phase_mask`,`event_chance`,`event_flags`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`action_param2`,`action_param3`,`action_param4`,`action_param5`,`action_param6`,`target_type`,`target_param1`,`target_param2`,`target_param3`,`target_x`,`target_y`,`target_z`,`target_o`,`comment`) VALUES
 (@NPC_SALRAND,0,0,0,38,0,100,1,1,1,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,0,0,'On data 1 1 - Say'),

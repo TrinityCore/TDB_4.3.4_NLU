@@ -1,4 +1,3 @@
-DELETE FROM `creature_ai_scripts` WHERE `creature_id`=17398;
 UPDATE `creature_template` SET `AIName`='SmartAI' WHERE `entry`=17398;
 
 DELETE FROM `smart_scripts` WHERE `entryorguid` IN  (-85712,-85717,-85719,-85724);
