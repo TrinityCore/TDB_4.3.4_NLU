@@ -1,5 +1,5 @@
 -- Spawn Blackened Urn (194092) GO based on sniff by Aokromes
-SET @GUID := 334; -- Set by TDB team
+SET @GUID := 1; -- Set by TDB team
 
 DELETE FROM `gameobject` WHERE `id`=194092;
 INSERT INTO `gameobject` (`guid`,`id`,`map`,`spawnMask`,`phaseMask`,`position_x`,`position_y`,`position_z`,`orientation`,`rotation0`,`rotation1`,`rotation2`,`rotation3`,`spawntimesecs`,`animprogress`,`state`) VALUES
