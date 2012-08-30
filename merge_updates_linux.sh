@@ -1,1 +1,1 @@
-cat updates/*.sql > world_updates.sql
+cat updates_02/*.sql > world_updates.sql
