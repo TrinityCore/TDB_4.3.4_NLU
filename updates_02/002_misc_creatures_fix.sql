@@ -96,8 +96,8 @@ INSERT INTO `creature_loot_template` VALUES
 (@ENTRY, 68781, 1.1, 1, 0, 1, 1),
 (@ENTRY, 68782, 1.1, 1, 0, 1, 1);
 DELETE FROM `creature` WHERE `id` = 50063;
-INSERT INTO `creature` (`guid`,`id`,`map`,`spawnMask`,`phaseMask`,`modelid`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`spawndist`,`currentwaypoint`,`curhealth`,`curmana`,`DeathState`,`MovementType`,`npcflag`,`unit_flags`,`dynamicflags`) VALUES
-(218221, 50063, 1, 1, 1, 0, 0, -10517.6, 69.0821, 12.1969, 1.53465, 7200, 0, 0, 14700, 0, 0, 0, 0, 0, 0);
+INSERT INTO `creature` (`guid`,`id`,`map`,`spawnMask`,`phaseMask`,`modelid`,`equipment_id`,`position_x`,`position_y`,`position_z`,`orientation`,`spawntimesecs`,`spawndist`,`currentwaypoint`,`curhealth`,`curmana`,`MovementType`,`npcflag`,`unit_flags`,`dynamicflags`) VALUES
+(218221, 50063, 1, 1, 1, 0, 0, -10517.6, 69.0821, 12.1969, 1.53465, 7200, 0, 0, 14700, 0, 0, 0, 0, 0);
 -- Ambassador Laurent
 UPDATE `creature_template` SET `minlevel` = 80, `maxlevel` = 80, `exp` = 3, `mindmg` = 500.4, `maxdmg` = 698.4, `attackpower` = 730, `baseattacktime` = 2000, `minrangedmg` = 409.2, `maxrangedmg` = 607.2, `rangedattackpower` = 120 WHERE `entry` = 47515;
 -- Ambassador Laurent
