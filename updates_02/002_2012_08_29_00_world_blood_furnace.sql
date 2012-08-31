@@ -285,6 +285,5 @@ INSERT INTO `waypoint_data`(`id`,`point`,`position_x`,`position_y`,`position_z`)
 ((@GUID+129)*10,18,477.3,-66.242,9.56);
 
 -- Revert a previous bad fix
-DELETE FROM `creature_ai_scripts` WHERE `creature_id`=17398;
 DELETE FROM `smart_scripts` WHERE `entryorguid` IN  (-85712,-85717,-85719,-85724) AND `source_type`=0;
 DELETE FROM `gameobject_scripts` WHERE `id`=150441;
