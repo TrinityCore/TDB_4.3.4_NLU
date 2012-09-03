@@ -37,7 +37,7 @@ DELETE FROM `player_levelstats` WHERE `race`=8  AND `class`=11;
 DELETE FROM `player_levelstats` WHERE `race`=8  AND `class`=2;
 DELETE FROM `player_levelstats` WHERE `race`=8  AND `class`=9;
 
-INSERT INTO `player_levelstats` (`race`, `class`, `level`, `str`, `agi`, `sta`, `inte`, `spi`)
+INSERT INTO `player_levelstats` (`race`, `class`, `level`, `str`, `agi`, `sta`, `inte`, `spi`) VALUES
 (1, 3, 2, 17, 29, 21, 21, 22),
 (1, 3, 3, 18, 31, 22, 21, 22),
 (1, 3, 4, 18, 32, 23, 22, 23),
