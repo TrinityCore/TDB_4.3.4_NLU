@@ -1,4 +1,4 @@
-﻿DELETE FROM `player_levelstats` WHERE `race`=1  AND `class`=11 AND `level` BETWEEN 2 AND 80;
+DELETE FROM `player_levelstats` WHERE `race`=1  AND `class`=11 AND `level` BETWEEN 2 AND 80;
 DELETE FROM `player_levelstats` WHERE `race`=1  AND `class`=3 AND `level` BETWEEN 2 AND 80;
 DELETE FROM `player_levelstats` WHERE `race`=1  AND `class`=7 AND `level` BETWEEN 2 AND 80;
 DELETE FROM `player_levelstats` WHERE `race`=10 AND `class`=1 AND `level` BETWEEN 2 AND 80;
