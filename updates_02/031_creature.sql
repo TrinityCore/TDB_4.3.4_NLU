@@ -1,6 +1,4 @@
 DELETE FROM `creature` WHERE `guid` IN (20485, 202335, 91798, 17676, 202336, 72513);
-
-DELETE FROM `creature` WHERE `guid` BETWEEN @CGUID+0 AND @CGUID+5;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `MovementType`) VALUES
 (20485, 54648, 530, 1, 1, 3075.774, 3640.879, 143.864, 3.909538, 120, 0, 0), -- Leeni "Smiley" Smalls (Area: 0)
 (202335, 58152, 530, 1, 1, 3072.46, 3643.013, 143.864, 4.363323, 120, 0, 0), -- Tini Smalls (Area: 0)
