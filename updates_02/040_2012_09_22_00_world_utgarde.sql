@@ -33,7 +33,7 @@ UPDATE `creature_template` SET `unit_flags`=2|131072|33554432, `flags_extra`=`fl
 UPDATE `creature_template` SET `unit_flags`=2|4|256|512, `faction_A`=35, `faction_H`=35, `flags_extra`=`flags_extra`|128 WHERE `entry`=23996;
 
 -- Dragonflayer runecaster
-DELETE FROM `creature_ai_scripts` WHERE `creature_id`=23960;
+-- DELETE FROM `creature_ai_scripts` WHERE `creature_id`=23960; 4.x
 DELETE FROM `smart_scripts` WHERE `entryorguid`=23960 AND `source_type`=0;
 INSERT INTO `smart_scripts` (`entryorguid`, `id`, `event_type`, `event_flags`, `event_param1`, `event_param2`, `event_param3`, `event_param4`, `action_type`, `action_param1`, `target_type`, `target_param2`, `comment`) VALUES 
 (23960,1,0,2,5000,7000,14000,17000,11,42740,11,30,'Dragonflayer Runecaster - In combat - Cast Njords Rune of Protection'),
@@ -42,7 +42,7 @@ INSERT INTO `smart_scripts` (`entryorguid`, `id`, `event_type`, `event_flags`, `
 (23960,4,0,4,1000,2000,15000,18000,11,59617, 1, 0,'Dragonflayer Runecaster - In combat - Cast Bolthorns Rune of Flame');
 
 -- Frenzied geist
-DELETE FROM `creature_ai_scripts` WHERE `creature_id`=28419;
+-- DELETE FROM `creature_ai_scripts` WHERE `creature_id`=28419; 4.x
 DELETE FROM `smart_scripts` WHERE `entryorguid`=28419 AND `source_type`=0;
 INSERT INTO `smart_scripts`(`entryorguid`,`event_type`,`event_param1`,`event_param2`,`event_param3`,`event_param4`,`action_type`,`action_param1`,`target_type`,`comment`) VALUES
 (28419,0,5000,5000,30000,30000,11,40414,5,'Frenzied geist - In combat - Cast Fixate');
