@@ -1,4 +1,4 @@
-﻿DELETE FROM `spell_target_position` WHERE `id` IN (49362, 85545, 99557, 101260, 99662, 84515, 82621, 84513, 17609);
+DELETE FROM `spell_target_position` WHERE `id` IN (49362, 85545, 99557, 101260, 99662, 84515, 82621, 84513, 17609);
 INSERT INTO `spell_target_position` (`id`, `target_map`, `target_position_x`, `target_position_y`, `target_position_z`, `target_orientation`) VALUES
 (49362, 1, -3748.11, -4440.21, 30.5688, 3.95172), -- Portal Effect: Theramore
 (85545, 0, -4890.07, -6626.74, 10.2846, 5.41085), -- Stormwind Portal to Highbank

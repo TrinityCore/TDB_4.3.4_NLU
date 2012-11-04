@@ -1,4 +1,4 @@
-﻿DELETE FROM `spell_target_position` WHERE `id` IN (88341, 96177, 44089, 17334, 102864, 94564, 94565, 103582);
+DELETE FROM `spell_target_position` WHERE `id` IN (88341, 96177, 44089, 17334, 102864, 94564, 94565, 103582);
 INSERT INTO `spell_target_position` (`id`, `target_map`, `target_position_x`, `target_position_y`, `target_position_z`, `target_orientation`) VALUES
 (88341, 732, -603.724, 1387.62, 22.0498, 0.4696437), -- Portal Effect: Tol Barad (Horde)
 (96177, 1, 2032.8, -4335.14, 95.4723, 5.033966), -- Portal Effect: Orgrimmar
