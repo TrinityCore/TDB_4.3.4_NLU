@@ -115,7 +115,7 @@ INSERT INTO `conditions` (`SourceTypeOrReferenceId`, `SourceGroup`, `SourceEntry
 DELETE FROM `npc_spellclick_spells` WHERE npc_entry = 27626;
 INSERT INTO `npc_spellclick_spells` (`npc_entry`,`spell_id`,`cast_flags`,`user_type` ) VALUES
 (27626,49138,1,0);
-UPDATE creature_template SET faction_a = 16, faction_h = 16, `AIName` = 'SmartAI' WHERE `entry` = 27626;
+UPDATE creature_template SET faction_a = 16, faction_h = 16, `AIName` = 'SmartAI' WHERE `entry` = 27626; -- Same in sniffs
 DELETE FROM smart_scripts WHERE `entryorguid` in (27626,2762600);
 INSERT INTO smart_scripts VALUES
 (27626,0,1,0,8,0,100,0x1,49134,0,0,0,12,27626,1,300000,0,0,0,0,0,0,0,0,0,0,0, 'Tatjana''s horse - On Spell Hit - resumm'),
@@ -241,7 +241,7 @@ INSERT INTO `smart_scripts` VALUES
 (@Script2,9,1,0,0,0,100,0,0,0,0,0,47,0,0,0,0,0,0,1,0,0,0,0,0, 0,0,'Slumbering Mjordin - Script - Unseen'),
 (@Script2,9,2,0,0,0,100,0,0,0,0,0,41,0,0,0,0,0,0,1,0,0,0,0,0, 0,0,'Slumbering Mjordin - Script - Despawn');
 -- Add SAI for Iskalder hostile - these values are not sniffed they are guessed by wowhead comments...
-UPDATE `creature_template` SET `exp`=2,`faction_A`=14, `faction_H`=14, `minlevel`=80, `maxlevel`=80, `mindmg`=300, `maxdmg`=350, `AIName`='SmartAI' WHERE `entry`=@Iskalder;
+UPDATE `creature_template` SET `exp`=2,`faction_A`=1885, `faction_H`=1885, `minlevel`=80, `maxlevel`=80, `mindmg`=300, `maxdmg`=350, `AIName`='SmartAI' WHERE `entry`=@Iskalder; -- Faction from sniffs
 DELETE FROM `smart_scripts` WHERE `entryorguid`=@Iskalder;
 INSERT INTO `smart_scripts` VALUES
 (@Iskalder,0,0,0,54,0,100,0,0,0,0,0,1,1,100,0,0,0,0,1,0,0,0,0,0,0,0,'Iskalder - On summon - Say text'),
@@ -390,11 +390,12 @@ UPDATE `quest_template` SET `RequiredClasses`=1024 WHERE `Id` IN (8905,8951,8926
 UPDATE `quest_template` SET `RequiredRaces`=1101 WHERE `Id`=7848; -- A
 UPDATE `quest_template` SET `RequiredRaces`=690 WHERE `Id`=7487; -- H
 -- ------------------------------------------------------------------------------------------------------------------------------------------------
+-- 4.x
 -- Issue 8021: spawn location in OG near Rogg (37072)
-SET @GUID := 76; -- set by TDB team - 4.x
-DELETE FROM `gameobject` WHERE `guid`=@GUID;
-INSERT INTO `gameobject` (`guid`,`id`,`map`,`spawnMask`,`phaseMask`,`position_x`,`position_y`,`position_z`,`orientation`,`rotation0`,`rotation1`,`rotation2`,`rotation3`,`spawntimesecs`,`animprogress`,`state`) VALUES
-(@GUID,1685,1,1,1,1523.778,-4368.241,18.21412,6.07367,0,0,0,1,300,100,1);
+-- SET @GUID := 76; -- set by TDB team
+-- DELETE FROM `gameobject` WHERE `guid`=@GUID;
+-- INSERT INTO `gameobject` (`guid`,`id`,`map`,`spawnMask`,`phaseMask`,`position_x`,`position_y`,`position_z`,`orientation`,`rotation0`,`rotation1`,`rotation2`,`rotation3`,`spawntimesecs`,`animprogress`,`state`) VALUES
+-- (@GUID,1685,1,1,1,1523.778,-4368.241,18.21412,6.07367,0,0,0,1,300,100,1);
 -- ------------------------------------------------------------------------------------------------------------------------------------------------
 -- Issue 8086: Missing Fires for Hallow End Q 
 -- This won't fix the quest until the rest of the event is scripted.

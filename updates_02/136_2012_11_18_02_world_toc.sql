@@ -122,7 +122,7 @@ UPDATE `creature_template` SET `dmg_multiplier`=21.5 WHERE `entry` IN (35707,356
 -- ToC warlock pet db corrections
 UPDATE `creature_template` SET `minlevel`=80, `maxlevel`=80, `exp`=2, `faction_A`=16, `faction_H`=16, `mindmg`=417, `maxdmg`=582, `attackpower`=608, `unit_class`=2, `dynamicflags`=8, `minrangedmg`=341, `maxrangedmg`=506, `rangedattackpower`=80 WHERE `entry` IN (36301, 36302, 36303);
 UPDATE `creature_template` SET `faction_A`=16, `faction_H`=16, `difficulty_entry_1`=36301, `difficulty_entry_2`=36302, `difficulty_entry_3`=36303 WHERE `entry`=35465;
-UPDATE `creature_template` SET `name`="Zhaagrym (1)" WHERE `entry`=36301;
+-- UPDATE `creature_template` SET `name`="Zhaagrym (1)" WHERE `entry`=36301; - ALL WDB values has been sniffed for 4.3.4
 
 -- Jaraxxus Mistress Kiss
 DELETE FROM `spell_script_names` WHERE `ScriptName`='spell_mistress_kiss_area';
