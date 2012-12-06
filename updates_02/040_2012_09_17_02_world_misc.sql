@@ -22,9 +22,10 @@ INSERT INTO `conditions` (`SourceTypeOrReferenceId`,`SourceGroup`,`SourceEntry`,
 (19,0,6146,0,1,8,0, 6145,0,0,0,0,'',"Nathanos' Ruse requires quest The Crimson Courier (6145)"),
 (19,0,6146,0,2,8,0,14350,0,0,0,0,'',"Nathanos' Ruse requires quest The Crimson Courier (14350)");
 
-
 -- The Scarlet Oracle, Demetria (6148) quest fix by nelegalno
 -- TODO: NPC must spawn when the quest is acepted
+
+/*
 SET @ID := 12339;
 SET @GUID := 19; -- set by TDB team
 
@@ -316,5 +317,6 @@ INSERT INTO `waypoint_data` (`id`,`point`,`position_x`,`position_y`,`position_z`
 (@ID,276,1587.05,-5573.4,111.171,0,0,0,0,100,0),
 (@ID,277,1576.47,-5592.38,111.171,0,0,0,0,100,0),
 (@ID,278,1569.09,-5606.81,114.19,0,0,0,0,100,0);
+*/
 
 UPDATE `script_texts` SET `sound`=5802 WHERE `npc_entry`=4832 AND `entry`='-1048002';
