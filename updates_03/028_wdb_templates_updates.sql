@@ -1305,7 +1305,6 @@ INSERT INTO `gossip_menu_option` (`menu_id`, `id`, `option_icon`, `option_text`,
 (2178, 0, 0, 'Examine the pylon.', 0, 0, ''), -- Eastern Crystal Pylon
 (2179, 0, 0, 'Examine the pylon.', 0, 0, ''); -- Western Crystal Pylon
 
-UPDATE `gossip_menu_option` SET `option_text`='Points Redemption' WHERE `menu_id`=9197 AND `id`=15; -- Landro Longshot
 UPDATE `gossip_menu_option` SET `option_text`='Then repeat after me: \"Lok''tar ogar! Victory or death - it is these words that bind me to the Horde. For they are the most sacred and fundamental of truths to any warrior of the Horde.
 
 I give my flesh and blood freely to the Warchief. I am the instrument of my Warchief''s desire. I am a weapon of my Warchief''s command.
