@@ -1,5 +1,6 @@
 -- Issue 5882: Dire Maul Arena Rare Bosses
 -- Spawnlocations are from YTDB need to be checked!
+/*
 SET @GUID := 45758; -- set the guid for spawning 4.x verified
 SET @POOL := 372; -- set the poolid for the spawn 4.x verified
 DELETE FROM `creature` WHERE `id` IN (11447,11497,11498);
@@ -15,6 +16,7 @@ INSERT INTO `pool_creature` (`guid`,`pool_entry`,`chance`,`description`) VALUES
 (@GUID  ,@POOL,0, 'Rare Spawn Dire Maul Arena'),
 (@GUID+1,@POOL,0, 'Rare Spawn Dire Maul Arena'),
 (@GUID+2,@POOL,0, 'Rare Spawn Dire Maul Arena');
+*/
 -- Issue 5925: Missing Sand Shark from Durotar
 -- Thx Mogale for sniffing
 DELETE FROM `creature` WHERE `id`=5435;
