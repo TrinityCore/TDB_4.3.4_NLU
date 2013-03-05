@@ -1,0 +1,2 @@
+INSERT INTO `spell_target_position` (`id`, `target_map`, `target_position_x`, `target_position_y`, `target_position_z`, `target_orientation`) VALUES (89157, 0, -8833.07, 622.778, 93.9317, 0.6771);
+INSERT INTO `spell_target_position` (`id`, `target_map`, `target_position_x`, `target_position_y`, `target_position_z`, `target_orientation`) VALUES (89158, 1, 1569.97, -4397.41, 16.0472, 0.543);
