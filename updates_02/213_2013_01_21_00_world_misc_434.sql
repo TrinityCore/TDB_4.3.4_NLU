@@ -1,4 +1,4 @@
-﻿-- Intro Areatrigger
+-- Intro Areatrigger
 DELETE FROM `areatrigger_scripts` WHERE `entry`=7246;
 INSERT INTO `areatrigger_scripts` (`entry`, `ScriptName`) VALUES
 (7246, 'at_alizabal_intro');
