@@ -164,7 +164,7 @@ UPDATE `creature_loot_template` SET `ChanceOrQuestChance`=-100 WHERE `entry` IN 
 DELETE FROM `creature_loot_template` WHERE `item`=3337;
 
 -- Young Crocolisk Skin (3397) and Giant Crocolisk Skin (3348) were removed in 4.0.3a along with quests "Apprentice's Duties" and "Young Crocolisk Skins"
--- http://www.wowpedia.org/Quest:Apprentice%27s_Duties / http://www.wowpedia.org/Quest:Young_Crocolisk_Skins
+-- http://www.wowpedia.org/Quest:Apprentice's_Duties / http://www.wowpedia.org/Quest:Young_Crocolisk_Skins
 DELETE FROM `creature_loot_template` WHERE `item` IN (3348,3397);
 
 -- Nightsaber Fang has Very High drop rate
