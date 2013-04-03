@@ -182,3 +182,41 @@ UPDATE `creature_loot_template` SET `ChanceOrQuestChance`=-90 WHERE `entry` IN (
 -- Alterac Signet Ring (3505) was removed in 4.0.3a along with quest "Noble Deaths" (512)
 -- http://www.wowpedia.org/Alterac_Signet_Ring / http://www.wowpedia.org/Quest:Noble_Deaths
 DELETE FROM `creature_loot_template` WHERE `item`=3505;
+
+-- Thick Hydra Scale has Guaranteed drop chance from Fenclaw Thrasher (18214) and Mragesh (18286), High from Parched Hydra (20324)
+-- http://eu.battle.net/wow/en/item/24375
+UPDATE `creature_loot_template` SET `ChanceOrQuestChance`=-100 WHERE `entry`=18214 and `item`=24375;
+UPDATE `creature_loot_template` SET `ChanceOrQuestChance`=-75 WHERE `entry`=20324 and `item`=24375;
+DELETE FROM `creature_loot_template` WHERE `entry`=18286 and `item`=24375;
+INSERT INTO `creature_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`lootmode`,`groupid`,`mincountOrRef`,`maxcount`) VALUES
+(18286,24375,-100,1,0,1,1);
+
+-- Garrick's Head (182) and Garrick Padfoot (103) was removed in 4.0.3a along with quest "Bounty on Garrick Padfoot" (6)
+-- http://www.wowpedia.org/Quest:Bounty_on_Garrick_Padfoot
+DELETE FROM `creature_loot_template` WHERE `entry`=103;
+DELETE FROM `pickpocketing_loot_template` WHERE `entry`=103;
+UPDATE `creature_template` SET `lootid`=0, `pickpocketloot`=0 WHERE `entry`=103;
+
+-- A Sycamore Branch (742) was removed in 4.0.3a along with quest "Sweet Amber" (51)
+-- http://www.wowpedia.org/A_Sycamore_Branch
+DELETE FROM `creature_loot_template` WHERE `item`=742;
+
+-- Tharil'zun's Head (1260) was removed in 4.0.3a along with quest "Tharil'zun" (19)
+-- http://www.wowpedia.org/Tharil'zun's_Head
+DELETE FROM `creature_loot_template` WHERE `item`=1260;
+
+-- A Mysterious Message (1381) was removed in 4.0.3a along with quest "The Defias Brotherhood" (142)
+-- http://www.wowpedia.org/A_Mysterious_Message
+DELETE FROM `creature_loot_template` WHERE `item`=1381;
+
+-- Thistlenettle's Badge (1875) was removed in 4.0.3a along with quest "Oh Brother. . ." (167)
+-- http://www.wowpedia.org/Thistlenettle's_Badge
+DELETE FROM `creature_loot_template` WHERE `item`=1875;
+
+-- Miners' Union Card (1894) was removed in 4.0.3a along with quest "Collecting Memories" (168)
+-- http://www.wowpedia.org/Miners'_Union_Card
+DELETE FROM `creature_loot_template` WHERE `item`=1894;
+
+-- Huge Gnoll Claw (1931) was removed in 4.0.3a when quest objective for Wanted: "Hogger" (176) was changed from him being dead to him getting incarserated
+-- http://www.wowhead.com/quest=176
+DELETE FROM `creature_loot_template` WHERE `item`=1931;
