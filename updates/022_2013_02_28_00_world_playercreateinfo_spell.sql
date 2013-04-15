@@ -11,3 +11,6 @@ INSERT INTO `playercreateinfo_spell` (`race`,`class`,`Spell`,`Note`) VALUES
 (10,8,61437, 'Opening'),
 (10,9,61437, 'Opening');
 */
+/* Add specific worgen spell to allow players to have Gilnean Mastiff when creating a worgen hunter */
+INSERT INTO `playercreateinfo_spell` (`racemask`,`classmask`,`Spell`,`Note`) VALUES
+(22,3,96234, 'Gilnean Mastiff';
