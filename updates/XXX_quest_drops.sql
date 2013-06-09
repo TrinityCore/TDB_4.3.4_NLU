@@ -59,18 +59,6 @@ UPDATE `creature_template` SET `lootid`=54373 WHERE `entry`=54373;
 UPDATE `creature_template` SET `lootid`=0, `pickpocketloot`=0 WHERE `entry`=38;
 DELETE FROM `creature_loot_template` WHERE `entry`=38;
 DELETE FROM `pickpocketing_loot_template` WHERE `entry`=38;
--- Removed from Deadmines dungeon in 4.0.3a: Defias Conjurer (619), Defias Watchman (1725), Defias Magician (1726), Defias Worker (1727), Defias Strip Miner (4416), Defias Taskmaster (4417), Defias Wizard (4418)
--- Defias Miner (598) replaced by Defias Miner (48419)
--- Defias Overseer (634) replaced by Defias Overseer (48421)
--- Defias Blackguard (636) replaced by Defias Blackguard (42698)
--- Defias Pirate (657) replaced by Defias Pirate (48522)
--- Defias Digger (824) replaced by Defias Digger (48420)
--- Defias Evoker (1729) replaced by Defias Evoker (48418)
--- Defias Squallshaper (1732) replaced by Defias Squallshaper (48521)
-DELETE FROM `creature` WHERE `id` IN (598,619,636,657,824,1725,1726,1727,1732,4416,4417,4418);
-DELETE FROM `creature_loot_template` WHERE `entry` IN (598,619,636,657,824,1725,1726,1727,1732,4416,4417,4418);
-DELETE FROM `pickpocketing_loot_template` WHERE `entry` IN (598,619,636,657,824,1725,1726,1727,1732,4416,4417,4418);
-UPDATE `creature_template` SET `lootid`=0, `pickpocketloot`=0 WHERE `entry` IN (598,619,636,657,824,1725,1726,1727,1732,4416,4417,4418);
 
 -- Red Silk Bandana has High drop rate
 -- http://eu.battle.net/wow/en/item/915
