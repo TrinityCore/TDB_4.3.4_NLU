@@ -492,7 +492,7 @@ INSERT INTO `instance_encounters` (`entry`,`creditType`,`creditEntry`,`lastEncou
 (1057,0,42333,307,'High Priestess Azil'),
 (1058,0,42188,0,'Ozruk'),
 (1059,0,43214,0,'Slabhide'),
-(1060,0,47739,6,''"Captain" Cookie'),
+(1060,0,47739,6,'"Captain" Cookie'),
 (1062,0,47626,0,'Admiral Ripsnarl'),
 (1063,0,43778,0,'Foe Reaper 5000'),
 (1064,0,47162,0,'Glubtok'),
