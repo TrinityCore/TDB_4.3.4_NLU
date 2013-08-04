@@ -1,0 +1,3 @@
+ --Fix the Quest Requirements for the Molten Core Pre-Quest--
+
+UPDATE `quest_template` SET `RequiredRaces`=0 WHERE  `Id`=7848;
