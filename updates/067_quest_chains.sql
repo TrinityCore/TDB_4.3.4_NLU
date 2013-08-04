@@ -9877,13 +9877,13 @@ UPDATE `quest_template` SET `PrevQuestId` = 28789, `ExclusiveGroup` = 0 WHERE `I
 UPDATE `quest_template` SET `PrevQuestId` = 29083, `ExclusiveGroup` = 0 WHERE `Id` = 26389;
 -- Seventh quest
 UPDATE `quest_template` SET `PrevQuestId` = 26389, `ExclusiveGroup` = 0 WHERE `Id` = 26390;
-UPDATE `quest_template` SET `PrevQuestId` = 28791, `ExclusiveGroup` = 0, WHERE `Id` = 28817;
-UPDATE `quest_template` SET `PrevQuestId` = 28792, `ExclusiveGroup` = 0, WHERE `Id` = 28818;
-UPDATE `quest_template` SET `PrevQuestId` = 28793, `ExclusiveGroup` = 0, WHERE `Id` = 28819;
-UPDATE `quest_template` SET `PrevQuestId` = 28794, `ExclusiveGroup` = 0, WHERE `Id` = 28820;
-UPDATE `quest_template` SET `PrevQuestId` = 28795, `ExclusiveGroup` = 0, WHERE `Id` = 28821;
-UPDATE `quest_template` SET `PrevQuestId` = 28796, `ExclusiveGroup` = 0, WHERE `Id` = 28822;
-UPDATE `quest_template` SET `PrevQuestId` = 28797, `ExclusiveGroup` = 0, WHERE `Id` = 28823;
+UPDATE `quest_template` SET `PrevQuestId` = 28791, `ExclusiveGroup` = 0 WHERE `Id` = 28817;
+UPDATE `quest_template` SET `PrevQuestId` = 28792, `ExclusiveGroup` = 0 WHERE `Id` = 28818;
+UPDATE `quest_template` SET `PrevQuestId` = 28793, `ExclusiveGroup` = 0 WHERE `Id` = 28819;
+UPDATE `quest_template` SET `PrevQuestId` = 28794, `ExclusiveGroup` = 0 WHERE `Id` = 28820;
+UPDATE `quest_template` SET `PrevQuestId` = 28795, `ExclusiveGroup` = 0 WHERE `Id` = 28821;
+UPDATE `quest_template` SET `PrevQuestId` = 28796, `ExclusiveGroup` = 0 WHERE `Id` = 28822;
+UPDATE `quest_template` SET `PrevQuestId` = 28797, `ExclusiveGroup` = 0 WHERE `Id` = 28823;
 -- Eight quest
 UPDATE `quest_template` SET `PrevQuestId` = 26390, `ExclusiveGroup` = 0 WHERE `Id` = 54;
 UPDATE `quest_template` SET `PrevQuestId` = 0, `ExclusiveGroup` = 0 WHERE `Id` = 26389;
