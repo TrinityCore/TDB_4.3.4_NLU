@@ -1,4 +1,4 @@
-SET @GUID = 445: -- Set by TDB
+SET @GUID := 445; -- Set by TDB
 DELETE FROM creature WHERE id IN (55531,55536,55537,55535);
 INSERT INTO creature (guid, id, map, spawnMask, phaseMask, position_x, position_y, position_z, orientation, spawntimesecs, spawndist, MovementType) VALUES 
 (@GUID, 55531, 576, 3, 1, 200.607, -5.280913, -12.88977, 6.265732, 7200, 0, 0), -- 55531 (Area: 0)
