@@ -3,8 +3,8 @@
 -- ---------------------
 SET @Obsidium := 28490;
 SET @RichObisium := 28495;
-SET @Elementium := 28492
-SET @RichElementium := 28493
+SET @Elementium := 28492;
+SET @RichElementium := 28493;
 SET @Pyrite := 28491;
 SET @RichPyrite := 28494;
 DELETE FROM `gameobject_loot_template` WHERE `entry` IN (@Obsidium,@RichObsidium,@Elementium,@RichElementium,@Pyrite,@RichPyrite);
