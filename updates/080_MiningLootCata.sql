@@ -3,7 +3,7 @@ SET @CataGreenGems := 12906;
 -- -- Cataclysm Zones -- 
 -- ---------------------
 SET @Obsidium := 28490;
-SET @RichObisium := 28495;
+SET @RichObsidium := 28495;
 SET @Elementium := 28492;
 SET @RichElementium := 28493;
 SET @Pyrite := 28491;
@@ -35,12 +35,12 @@ INSERT INTO `gameobject_loot_template` (`entry`,`item`,`ChanceOrQuestChance`,`lo
 (@RichElementium,52328,  2,1,0,1,2), -- Volatile Air
 (@RichElementium,    1,  5,1,0,-@CataGreenGems,1), -- One From Green Gems
 -- Pyrite Deposit
-(@Pyrite,52183,100,100,1,0,2,4), -- Pyrite Ore
+(@Pyrite,52183,100,1,0,2,4), -- Pyrite Ore
 (@Pyrite,52325, 10,1,0,1,2), -- Volatile Fire
 (@Pyrite,52328, 10,1,0,1,2), -- Volatile Air
 (@Pyrite,    1,  5,1,0,-@CataGreenGems,1), -- One From Green Gems
 -- Rich Pyrite Deposit
-(@RichPyrite,52183,100,100,1,0,5,7), -- Pyrite Ore
+(@RichPyrite,52183,100,1,0,5,7), -- Pyrite Ore
 (@RichPyrite,52325, 10,1,0,2,3), -- Volatile Fire
 (@RichPyrite,52328, 10,1,0,2,3), -- Volatile Air
 (@RichPyrite,    1,  5,1,0,-@CataGreenGems,1); -- One From Green Gems
