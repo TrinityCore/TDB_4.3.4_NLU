@@ -15,7 +15,6 @@ INSERT INTO `player_factionchange_items` (`race_A`, `alliance_id`, `commentA`, `
 (0, 62472, 'Mandala of Stirring Patterns', 0, 62467, 'Mandala of Stirring Patterns'),
 (0, 68739, 'Darkheart Hacker', 0, 68740, 'Darkheart Hacker'),
 (0, 63355, 'Rustberg Gull', 0, 64996, 'Rustberg Gull'),
-(0, 90897, 'Fox Kit', 0, 90898, 'Fox Kit'),
 (0, 63141, 'Tol Barad Searchlight', 0, 64997, 'Tol Barad Searchlight'),
 (0, 64998, 'Reins of the Spectral Steed', 0, 64999, 'Reins of the Spectral Wolf'),
 (0, 63039, 'Reins of the Drake of the West Wind', 0, 65356, 'Reins of the Drake of the West Wind'),
