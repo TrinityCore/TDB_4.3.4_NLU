@@ -1,4 +1,4 @@
-SET @CataGreenGems := 12906;
+SET @CataGreenGems := 12907;
 -- ---------------------
 -- -- Cataclysm Zones -- 
 -- ---------------------
