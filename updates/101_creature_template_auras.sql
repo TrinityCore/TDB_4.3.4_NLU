@@ -16,4 +16,4 @@ UPDATE `creature_template_addon` SET `auras` = '86802' WHERE `entry` = 46559;
 UPDATE `creature_template_addon` SET `auras` = '102581' WHERE `entry` = 54123;
 UPDATE `creature_template_addon` SET `auras` = '76020' WHERE `entry` = 40761;
 
-DELETE FROM `creature_template_addon` WHERE `entry`=33292
+DELETE FROM `creature_template_addon` WHERE `entry`=33292;
