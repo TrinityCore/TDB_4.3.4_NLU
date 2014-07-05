@@ -1,3 +1,5 @@
+SET NAMES 'utf8';
+
 UPDATE `locales_creature` SET `name_loc3`='Taschendieb' WHERE `entry`=94;
 UPDATE `locales_creature` SET `name_loc3`='Schmuggler der Defias' WHERE `entry`=95;
 UPDATE `locales_creature` SET `name_loc3`='Bandit' WHERE `entry`=116;
@@ -1573,3 +1575,5 @@ UPDATE `locales_creature` SET `name_loc3`='Bürger von Sturmwind' WHERE `entry`=
 UPDATE `locales_creature` SET `name_loc3`='Krieger der Dunkelspeere' WHERE `entry`=40241;
 UPDATE `locales_creature` SET `name_loc3`='Krieger der Dunkelspeere' WHERE `entry`=40392;
 UPDATE `locales_creature` SET `name_loc3`='Späher der Dunkelspeere' WHERE `entry`=40416;
+
+SET NAMES 'latin1';
