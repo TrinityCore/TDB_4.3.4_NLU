@@ -8,7 +8,7 @@ DELETE FROM `creature_addon` WHERE `guid`=@NPC;
 INSERT INTO `creature_addon` (`guid`,`path_id`,`bytes2`,`mount`,`auras`) VALUES (@NPC,@PATH,1,0, '');
 
 DELETE FROM `waypoint_data` WHERE `id`=@PATH;
-INSERT INTO `waypoint_data` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `delay`, `move_flag`, `action`, `action_chance`, `wpguid`) VALUES
+INSERT INTO `waypoint_data` (`id`, `point`, `position_x`, `position_y`, `position_z`, `orientation`, `delay`, `move_type`, `action`, `action_chance`, `wpguid`) VALUES
 (@PATH, 1, -8831.81, 543.054, 96.8538, 0, 0, 0, 271, 100, 0),
 (@PATH, 2, -8831.28, 543.109, 96.8344, 0, 60000, 0, 272, 100, 0),
 (@PATH, 3, -8823.8, 554.302, 95.1343, 0, 0, 0, 0, 100, 0),
