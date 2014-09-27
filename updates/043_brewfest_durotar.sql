@@ -1,5 +1,7 @@
 UPDATE `creature_template` SET `speed_run`=0.8571429, `RangeAttackTime`=2000 WHERE `entry`=23487; -- Wild Wolpertinger
 
+SET @CGUID := 361975;
+
 DELETE FROM `creature` WHERE `guid` BETWEEN @CGUID+0 AND @CGUID+17;
 INSERT INTO `creature` (`guid`, `id`, `map`, `spawnMask`, `phaseMask`, `phaseId`, `position_x`, `position_y`, `position_z`, `orientation`, `spawntimesecs`, `spawndist`, `MovementType`) VALUES
 (@CGUID+0, 23487, 1, 1, 1, 0, 1212.667, -4187.151, 24.87226, 6.039544, 120, 0, 0), -- Wild Wolpertinger (Area: Durotar) (Auras: )
