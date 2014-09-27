@@ -1,6 +1,6 @@
 SET @CGUID := 361975;
 
-DELETE FROM `game_event_creature` WHERE `eventEntry`=24 AND `guid` BETWEEN @CGUID+0 AND @CGUID+85;
+DELETE FROM `game_event_creature` WHERE `eventEntry`=24 AND `guid` BETWEEN @CGUID+0 AND @CGUID+17;
 INSERT INTO `game_event_creature` (`eventEntry`, `guid`) VALUES
 (24, @CGUID+0), 
 (24, @CGUID+1), 
